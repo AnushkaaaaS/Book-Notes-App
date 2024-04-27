@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mybookapp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="../public/assets/home.css">
+    <%- include("navbaar.ejs") %>
+
+
+</head>
+<body>
+  <% if(locals.message && locals.classname){ %>
+    <div class="<%=classname  %>" role="alert">
+      <%=message  %>
+    </div>
+    <% } %>
+   
+<div class="container">
+  <div class="row">
+    <% if(locals.data){ 
+        
+     for(i=0;i<8;i++){ %>
+      <div class="col-sm-3">
+      <div class="card">
+      <img src="https://covers.openlibrary.org/b/isbn/<%=data.docs[i].isbn[0]%>-M.jpg" class="card-img-top" alt="Cover not found">
+      </div>
+     
+        <div class="card-body">
+          <h5 class="card-title" value="title"><%=data.docs[i].title%></h5>
+          <p class="card-text" value="author"><%= data.docs[i].author_name[0]%></p>
+          <a class="btn btn-outline-primary" href="/addtbr/<%=data.docs[i].title%>">TBR</a>       
+          <a class="btn btn-outline-primary" href="/addread/<%=data.docs[i].title%>">READ</a>       
+          </div>
+          </div> 
+ 
+
+
+    
+      <% }} %>
+      </div>
+      </div>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+</html>

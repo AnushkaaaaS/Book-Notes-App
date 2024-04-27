@@ -1,0 +1,34 @@
+/* style.css */
+
+.card{
+    margin: 5px;
+}
+.img-fluid{
+    height: 34rem;
+}
+    
+    .star {
+    font-size: 10vh;
+    cursor: pointer;
+    }
+    
+    .one {
+    color: rgb(255, 0, 0);
+    }
+    
+    .two {
+    color: rgb(255, 106, 0);
+    }
+    
+    .three {
+    color: rgb(251, 255, 120);
+    }
+    
+    .four {
+    color: rgb(255, 255, 0);
+    }
+    
+    .five {
+    color: rgb(24, 159, 14);
+    }
+    

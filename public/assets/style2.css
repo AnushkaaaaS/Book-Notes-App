@@ -1,0 +1,19 @@
+.checked {
+    color: orange;
+  }
+ img{
+  height: 80px;
+  width: 55px;
+ } 
+ 
+ body{
+  margin: 15px;
+ }
+ th{
+  
+  background-color: antiquewhite;
+  padding: 10px;
+ }
+ td{
+  padding: 4px
+ }
