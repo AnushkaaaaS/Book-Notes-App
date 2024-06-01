@@ -1,0 +1,1 @@
+A personalized web app to manage your reading journey. Track your read and unread books, set and achieve reading goals, and write detailed reviews. Built with Node.js, HTML, CSS, and JavaScript, it offers a tailored experience to help you stay organized and motivated. Perfect for avid readers who want to keep all their book-related notes in one place.
